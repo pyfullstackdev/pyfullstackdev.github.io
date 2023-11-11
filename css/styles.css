@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #102030;
+}
+
+.container {
+  text-align: center;
+  font-family: monospace;
+}
+
+.container h1 {
+  color: #fff;
+  cursor: pointer;
+  font-size: 5rem;
+  position: relative;
+  text-decoration: none;
+}
+
+#cursor {
+  color: #50d599;
+}
+
+#text {
+  color: #50d599;
+}
+
+.blink {
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
